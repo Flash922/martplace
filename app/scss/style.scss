@@ -1,0 +1,193 @@
+@import "vars.scss";
+@import "global.scss";
+@import "fonts.scss";
+
+// start header
+.header__{
+  &inner{
+  background-color: #eef1f3;
+  }
+  &wrapper{
+  display: flex;
+  justify-content: space-between;
+  min-height: 100px;
+  align-items: center;
+  }
+  &info{
+  display: flex;
+  align-items: center;
+  }
+
+  // &logo{
+  //   background-image: url(../images/Logo_MartPlace.jpg);
+  //   width: 200px;
+  //   height: 50px;
+  // }
+  }
+  .info__{
+  &btn{
+  height: 36px;
+  width: 140px;
+  background-color: $blue;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 36px;
+  }
+  &avatar{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  margin-left: 48px;
+  }
+  &form{
+  display: inline-block
+  }
+  &area{
+  margin-left: 22px;
+  }
+}
+.info__list{
+  display: flex;
+  margin-left: 50px;
+  &>li + li{
+    margin-left: 33px;
+  }
+}
+.list__icon{
+  position: relative;
+  &::after{
+  content: '';
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 22px;
+  min-width: 22px;
+  border-radius: 50%;
+  color: #fff;
+  }
+}
+.alarm::after{
+  content: '25';
+  background-color: #ff6a6c;
+  top: -7px;
+  left: 9px;
+}
+.mail::after{
+  content: '6';
+  background-color: #62d03b;
+  top: -7px;
+  left: 16px;
+}
+.basket::after{
+  content: '2';
+  background-color: #0674ec;
+  top: -7px;
+  left: 16px;
+}
+.list__img{
+  vertical-align: middle;
+}
+.area__score{
+  font-size: 15px;
+  line-height: 20px;
+  color: $blue;
+}
+// header menu
+.menu__{
+  &wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  &list>li{
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+  &list>li+li{
+    margin-left: 15px;
+  }
+}
+.list-link{
+    color:$medium;
+}
+.header__search{
+  display: flex;
+  justify-content: space-between;
+  height: 46px;
+  min-width: 360px;
+  border: 1px solid #e9ecf0;
+  border-radius: 23px;
+  padding-left: 25px;
+  &-area{
+    border: none;
+    width: 100%;
+    &:focus{
+      outline: none;
+    }
+  }
+  &-btn{
+    background-color: $blue;
+    width: 70px;
+    border: 0 transparent;
+    border-radius: 23px;
+  }
+}
+// section about
+
+.about{
+	min-height: 726px;
+	// background-color: #441c7c;
+	background-image: linear-gradient(to left, #0030de, #2e5afb);
+}
+
+.about__{
+  &inner{
+    text-align: center;
+    color: #fff;
+  }
+  &title1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 400;
+    padding-top: 180px;
+  }
+  &title2{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+  &subtitle{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 70px;
+  }
+  &btn-box{
+    display: inline-flex;
+  }
+  &btn{
+  height: 55px;
+  min-width: 190px;
+  border-radius: 27px;
+  line-height: 55px;
+  }
+}
+.btn-all{
+  background-color: #fff;
+  color: $blue;
+  margin-right: 30px;
+
+}
+.btn-popular{
+  border: solid 1px #fff;
+  color: #fff;
+}
