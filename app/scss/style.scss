@@ -485,7 +485,40 @@ margin: 30px;
   }
 }
 //end followers
-
+//start result
+.result{
+  background-color: #212225;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+    }
+  &__box{
+    min-width: 100px;
+    text-align: center;
+    .lnr-briefcase,.lnr-cloud-download,.lnr-smile,.lnr-users{ 
+    font-size: 48px;
+    margin-bottom: 50px;
+    }
+  }
+  &__box-count{
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  p{
+    font-size: 18px;
+    color: #fff;
+  }
+}
+.rbox-1{color: #feb71d;
+}
+.rbox-2{color: #58c9e9;
+}
+.rbox-3{color: #77de51;
+}
+.rbox-4{color: #ff6a6d;
+}
+//end result 
 //start footer
 .footer-info{
   background-color: #262b30;
