@@ -5,73 +5,466 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Martpalce</title>
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <!-- Header -->
-  <header class="header">
-    <div class="header__inner">
-      <div class="container">
-        <div class="header__wrapper">
-          <a href="#">
-            <img src="images/logo_header.png" alt="" class="header__logo">
-          </a>
-          <div class="header__info">
-            <a class="info__btn" href="#">Become a Seller</a>
-            <ul class="info__list">
-              <li class="list__icon alarm"><a href="#"><img class="list__img" src="images/icons/alarm.png" alt="the bell"></a></li> 
-              <li class="list__icon mail"><a href="#"><img class="list__img" src="images/icons/mail.png" alt="inbox"></a></li>
-              <li class="list__icon basket"><a href="#"><img class="list__img" src="images/icons/cart.png" alt="the basket"></a></li>
-            </ul>
+<div class="wrapper">
+  <div class="content">
+    <header class="header">
+      <div class="header__inner">
+        <div class="container">
+          <div class="header__wrapper">
             <a href="#">
-              <div class="info__avatar" style="background-image: url(images/content/e3d39872ea549f9c45fa485e24138b4a.jpg);"></div>
+              <img src="images/logo_header.png" alt="" class="header__logo">
             </a>
-            <div class="info__area">
+            <div class="header__info">
+              <a class="info__btn" href="#">Become a Seller</a>
+              <ul class="info__list">
+                <li><a  href="#"><span class="list__icon lnr lnr-alarm"></span></a></li>
+                <li><a href="#"><span class="list__icon lnr lnr-envelope"></span></a></li>
+                <li><a href="#"><span class="list__icon lnr lnr-cart"></span></a></li>
+              </ul>
               <a href="#">
-                <div class="area__personal">Taofiq Hakim</div>
+                <div class="info__avatar" style="background-image: url(images/content/e3d39872ea549f9c45fa485e24138b4a.jpg);"></div>
               </a>
+              <div class="info__area">
+                <a href="#">
+                  <div class="area__personal">Taofiq Hakim</div>
+                </a>
+                <a href="#">
+                  <div class="area__score">$20.25</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="menu">
+        <div class="container">
+          <div class="header-menu__wrapper">
+            <ul class="menu__list">
+              <li><a class="list-link" href="#">home</a></li>
+              <li><a class="list-link" href="#">all products</a> </li>
+              <li><a class="list-link" href="#">wordpress</a></li>
+              <li><a class="list-link" href="#">festures</a></li>
+              <li><a class="list-link" href="#">Pages</a></li>
+            </ul>
+            <form class="header__search">
+              <input class="header__search-area" type="text" placeholder="Search product here...">
+              <button type="submit" class="header__search-btn">
+                <span class="lnr lnr-magnifier"></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__title1">Create Your Own</div>
+          <div class="about__title2">Digital Product Marketplace</div>
+          <div class="about__subtitle">MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products</div>
+          <div class="about__btn-box">
+            <a href="#" class="about__btn btn-all">View All Products</a>
+            <a href="#" class="about__btn btn-popular">Popular Products</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="features">
+      <div class="container">
+        <div class="features__inner">
+          <div class="inner__box">
+            <img class='inner__box-img' src="images/book.png" alt="book">
+            <h3 class='inner__box-title'>Best UX Research</h3>
+            <p class='inner__box-text'>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.</p>
+          </div>
+          <div class="inner__box comp">
+            <img class='inner__box-img' src="images/comp.png" alt="book">'
+            <h3 class='inner__box-title'>Fully Responsive</h3>
+            <p class='inner__box-text'>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.</p></div>
+          <div class="inner__box">
+            <img class='inner__box-img' src="images/mobile.png" alt="book">
+            <h3 class='inner__box-title'>Buy & Sell Easily</h3>
+            <p class='inner__box-text'>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="featured">
+      <div class="container">
+        <div class="featured__inner">
+          <div class="section__title">
+            <div class="section__title-text">Weekly Featured Products</div>
+            <div class="slider__header-arrow"></div>
+          </div>
+          <div class="slider__container">
+            <div class='slider-box'>
+              <div class="slider-box__image">
+                </div>
+              <div class="slider-box__content">
+                <div class="box-wrapper__top">
+                  <h4 class="box-title">One Page Resume Template</h4>
+                  <div class="box-subtitle">
+                    <a class="author-link" href="#">
+                      <div class="avatar"></div>
+                      <div class="name">AazzTech</div>
+                    </a>
+                    <a href="#" class="theme-link">
+                      <div class="icon-wordpress"></div>
+                      <div class="wordpress">Wordpress</div>
+                    </a>
+                  </div>
+                  <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                  </p>
+                  <div class="box-link">
+                    <ul>
+                      <li><a href="#">website</a></li>
+                      <li><a href="#">plugin</a></li>
+                      <li><a href="#">landing page</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="box-wrapper__bottom">
+                  <div class="bottom-1">
+                    <div class="slider-price">$10-$50</div>
+                    <div class="slider-like"><span class="lnr lnr-heart"></span>46</div>
+                    <div class="slider-cart"><span class="lnr lnr-cart"></span>634</div>
+                  </div>
+                  <div class="slider-rating"></div>
+                </div>
+              </div>
+            </div>
+            <div class='slider-box'>
+              <div class="slider-box__image">
+                </div>
+              <div class="slider-box__content">
+                <div class="box-wrapper__top">
+                  <h4 class="box-title">One Page Resume Template</h4>
+                  <div class="box-subtitle">
+                    <a class="author-link" href="#">
+                      <div class="avatar"></div>
+                      <div class="name">AazzTech</div>
+                    </a>
+                    <a href="#" class="theme-link">
+                      <div class="icon-wordpress"></div>
+                      <div class="wordpress">Wordpress</div>
+                    </a>
+                  </div>
+                  <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                  </p>
+                  <div class="box-link">
+                    <ul>
+                      <li><a href="#">website</a></li>
+                      <li><a href="#">plugin</a></li>
+                      <li><a href="#">landing page</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="box-wrapper__bottom">
+                  <div class="bottom-1">
+                    <div class="slider-price">$10-$50</div>
+                    <div class="slider-like"><span class="lnr lnr-heart"></span>46</div>
+                    <div class="slider-cart"><span class="lnr lnr-cart"></span>634</div>
+                  </div>
+                  <div class="slider-rating"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="released">
+      <div class="container">
+        <div class="section__title">
+          <div class="section__title-text">Newest Release Products</div>
+          <div class="filter">Filter by:</div>
+          <div class="filter-nav__inner">
+            <div class="nav-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="followers">
+      <div class="container">
+        <div class="followers__inner">
+          <div class="followers__header-inner">
+            <div class="section__title">
+                <div class="section__title-text">Your Followers Feed</div>
+                <div class="slider__header-arrow2"></div>
+            </div>
+          </div>
+          <div class="slider__container-2">
+            <div class="cart cart-slider2">
+                <div class="cart__image cart-slider2__image">
+                </div>
+                <div class="cart__content cart-slider2__content">
+                  <div class="cart-slider2__title cart__title">E-commerce Shopping Cart</div>
+                  <div class="cart-slider2__subtitle box-subtitle">
+                    <a class="author-link" href="#">
+                      <div class="avatar"></div>
+                      <div class="name">Theme-Valley</div>
+                    </a>
+                    <a href="#" class="theme-link">
+                      <div class="icon-wordpress"></div>
+                      <div class="wordpress">Plugin</div>
+                    </a>
+                  </div>
+                  <p class="cart__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                    the mattis, leo quam aliquet congue.</p>
+                </div>
+                <div class="cart-slider2__bottom cart__bottom">
+                  <div class="cart__price">$20</div>
+                  <div class="cart__like"><span class="lnr lnr-heart"></span>90</div>
+                  <div class="slider-rating"></div>
+                  <div class="cart__amount"><span class="lnr lnr-cart"></span> 246</div>
+                </div>
+              
+            </div>
+            <div class="cart cart-slider2">
+                <div class="cart__image cart-slider2__image">
+                </div>
+                <div class="cart__content cart-slider2__content">
+                  <div class="cart-slider2__title cart__title">E-commerce Shopping Cart</div>
+                  <div class="cart-slider2__subtitle box-subtitle">
+                    <a class="author-link" href="#">
+                      <div class="avatar"></div>
+                      <div class="name">Theme-Valley</div>
+                    </a>
+                    <a href="#" class="theme-link">
+                      <div class="icon-wordpress"></div>
+                      <div class="wordpress">Plugin</div>
+                    </a>
+                  </div>
+                  <p class="cart__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                    the mattis, leo quam aliquet congue.</p>
+                </div>
+                <div class="cart-slider2__bottom cart__bottom">
+                  <div class="cart__price">$20</div>
+                  <div class="cart__like"><span class="lnr lnr-heart"></span>90</div>
+                  <div class="slider-rating"></div>
+                  <div class="cart__amount"><span class="lnr lnr-cart"></span> 246</div>
+                </div>
+              
+            </div>
+            <div class="cart cart-slider2">
+                <div class="cart__image cart-slider2__image">
+                </div>
+                <div class="cart__content cart-slider2__content">
+                  <div class="cart-slider2__title cart__title">E-commerce Shopping Cart</div>
+                  <div class="cart-slider2__subtitle box-subtitle">
+                    <a class="author-link" href="#">
+                      <div class="avatar"></div>
+                      <div class="name">Theme-Valley</div>
+                    </a>
+                    <a href="#" class="theme-link">
+                      <div class="icon-wordpress"></div>
+                      <div class="wordpress">Plugin</div>
+                    </a>
+                  </div>
+                  <p class="cart__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                    the mattis, leo quam aliquet congue.</p>
+                </div>
+                <div class="cart-slider2__bottom cart__bottom">
+                  <div class="cart__price">$20</div>
+                  <div class="cart__like"><span class="lnr lnr-heart"></span>90</div>
+                  <div class="slider-rating"></div>
+                  <div class="cart__amount"><span class="lnr lnr-cart"></span> 246</div>
+                </div>
+              
+            </div>
+            <div class="cart cart-slider2">
+                <div class="cart__image cart-slider2__image">
+                </div>
+                <div class="cart__content cart-slider2__content">
+                  <div class="cart-slider2__title cart__title">E-commerce Shopping Cart</div>
+                  <div class="cart-slider2__subtitle box-subtitle">
+                    <a class="author-link" href="#">
+                      <div class="avatar"></div>
+                      <div class="name">Theme-Valley</div>
+                    </a>
+                    <a href="#" class="theme-link">
+                      <div class="icon-wordpress"></div>
+                      <div class="wordpress">Plugin</div>
+                    </a>
+                  </div>
+                  <p class="cart__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                    the mattis, leo quam aliquet congue.</p>
+                </div>
+                <div class="cart-slider2__bottom cart__bottom">
+                  <div class="cart__price">$20</div>
+                  <div class="cart__like"><span class="lnr lnr-heart"></span>90</div>
+                  <div class="slider-rating"></div>
+                  <div class="cart__amount"><span class="lnr lnr-cart"></span> 246</div>
+                </div>
+              
+            </div>
+            <div class="cart cart-slider2">
+                <div class="cart__image cart-slider2__image">
+                </div>
+                <div class="cart__content cart-slider2__content">
+                  <div class="cart-slider2__title cart__title">E-commerce Shopping Cart</div>
+                  <div class="cart-slider2__subtitle box-subtitle">
+                    <a class="author-link" href="#">
+                      <div class="avatar"></div>
+                      <div class="name">Theme-Valley</div>
+                    </a>
+                    <a href="#" class="theme-link">
+                      <div class="icon-wordpress"></div>
+                      <div class="wordpress">Plugin</div>
+                    </a>
+                  </div>
+                  <p class="cart__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                    the mattis, leo quam aliquet congue.</p>
+                </div>
+                <div class="cart-slider2__bottom cart__bottom">
+                  <div class="cart__price">$20</div>
+                  <div class="cart__like"><span class="lnr lnr-heart"></span>90</div>
+                  <div class="slider-rating"></div>
+                  <div class="cart__amount"><span class="lnr lnr-cart"></span> 246</div>
+                </div>
+              
+            </div>
+            <div class="cart cart-slider2">
+                <div class="cart__image cart-slider2__image">
+                </div>
+                <div class="cart__content cart-slider2__content">
+                  <div class="cart-slider2__title cart__title">E-commerce Shopping Cart</div>
+                  <div class="cart-slider2__subtitle box-subtitle">
+                    <a class="author-link" href="#">
+                      <div class="avatar"></div>
+                      <div class="name">Theme-Valley</div>
+                    </a>
+                    <a href="#" class="theme-link">
+                      <div class="icon-wordpress"></div>
+                      <div class="wordpress">Plugin</div>
+                    </a>
+                  </div>
+                  <p class="cart__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                    the mattis, leo quam aliquet congue.</p>
+                </div>
+                <div class="cart-slider2__bottom cart__bottom">
+                  <div class="cart__price">$20</div>
+                  <div class="cart__like"><span class="lnr lnr-heart"></span>90</div>
+                  <div class="slider-rating"></div>
+                  <div class="cart__amount"><span class="lnr lnr-cart"></span> 246</div>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="result">
+      <div class="container">
+        <div class="result__inner">
+          <div class="result__box">
+            <div class=""></div>
+            <div class="result__box-count">38.436</div>
+            <p>items for sale</p>
+          </div>
+          <div class="result__box"></div>
+          <div class="result__box"></div>
+          <div class="result__box"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<footer
+    <div class="footer-info">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer-item1">
+            <div class="footer-item__title">
               <a href="#">
-                <div class="area__score">$20.25</div>
+                <img src="images/logo_footer.png" alt="" class="header__logo">
               </a>
+            </div>
+            <p class="footer-item__text">Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis, leo quam.</p>
+            <a href="tel:+67898752235" class="contact "><span class="lnr lnr-phone-handset"></span> Phone: +6789-875-2235</a>
+            <a href="#" class="contact "><span class="lnr lnr-envelope"></span> support@aazztech.com</a>
+            <a href="#" class="contact"><span class=" lnr lnr-map-marker"></span> 202 New Hampshire Avenue
+              Northwest #100, New York-2573</a>
+          </div>
+          <div class="footer-item2">
+            <div class="footer-item__title">
+              Our Company
+            </div>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">How It Work</a></li>
+              <li><a href="#">Affiliates</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Copyright Notice</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-item3">
+            <div class="footer-item__title">
+              Help Support
+            </div>
+            <ul>
+              <li><a href="#">Support Forum</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Support Policy</a></li>
+              <li><a href="#">Refund Policy</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Buyers Faq</a></li>
+              <li><a href="#">Sellers Faq</a></li>
+            </ul>
+          </div>
+          <div class="footer-item4">
+            <div class="footer-item__title">
+              Newsletter
+            </div>
+            <p class="footer-item__text">Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!
+            </p>
+            <form class="email-form">
+              <input class="email-form__area" type="text" placeholder="Enter email">
+              <button class="email-form__btn">
+                Submit
+              </button>
+            </form>
+            <div class="footer-link__social">
+              <ul>
+                <li class="footer-link__social--1"><a href="#" class="icon-facebook"></a></li>
+                <li class="footer-link__social--2"><a href="#" class="icon-twitter"></a></li>
+                <li class="footer-link__social--3"><a href="#" class="icon-google"></a></li>
+                <li class="footer-link__social--4"><a href="#" class="icon-pinterest-p"></a></li>
+                <li class="footer-link__social--5"><a href="#" class="icon-linkedin"></a></li>
+                <li class="footer-link__social--6"><a href="#" class="icon-dribbble"></a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <nav class="menu">
+    <div class="footer-copy">
       <div class="container">
-        <div class="menu__wrapper">
-          <ul class="menu__list">
-            <li><a class="list-link" href="#">home</a></li>
-            <li><a class="list-link" href="#">all products</a> </li>
-            <li><a class="list-link" href="#">wordpress</a></li>
-            <li><a class="list-link" href="#">festures</a></li>
-            <li><a class="list-link" href="#">Pages</a></li>
-          </ul>
-          <form class="header__search" action="">
-            <input class="header__search-area" type="text" placeholder="Search product here...">
-            <button class="header__search-btn">
-              <img src="" alt="">
-            </button>
-          </form>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <section class="about">
-    <div class="container">
-      <div class="about__inner">
-        <div class="about__title1">Create Your Own</div>
-        <div class="about__title2">Digital Product Marketplace</div>
-        <div class="about__subtitle">MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products</div>
-        <div class="about__btn-box">
-          <a href="#" class="about__btn btn-all">View All Products</a>
-          <a href="#" class="about__btn btn-popular">Popular Products</a>
+        <div class="footer-copy__text">©2017
+          <a href="#">MartPlace.</a>
+          All rights reserved. Created by 
+          <a href="#">AazzTech</a>
         </div>
       </div>
     </div>
-  </section>
+</footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>

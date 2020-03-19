@@ -1,8 +1,13 @@
+html{
+  box-sizing: border-box;
+  height: 100%;
+}
 body{
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   line-height: 30px;
   font-size: 16px;
+  height: 100%;
 }
 a{
   text-decoration: none;
@@ -10,8 +15,44 @@ a{
 ul{
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+p,h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+}
+h4{
+  font-size: 24px;
+  font-weight: 500;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.content{
+  flex: 1 0 auto;
 }
 .container{
   max-width: 1140px;
   margin: 0 auto;
+}
+.logo-link{
+  width: 28px;
+  height: 28px;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+.avatar{
+  width: 30px;
+  height: 30px;
+  background-color: $violet;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.subtitle{
+  font-size: 18px;
+  line-height: 24px;
+}
+.footer{
+  flex: 0 0 auto;
 }
