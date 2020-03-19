@@ -519,6 +519,37 @@ margin: 30px;
 .rbox-4{color: #ff6a6d;
 }
 //end result 
+//start choose
+
+//end choose
+
+
+//start join
+.join{
+  background-image: linear-gradient(to right, #7221a0, #0d3ef2);
+  &__wrapper{
+    padding: 110px 0; 
+    text-align: center;
+    color: #fff;
+    .title36{
+      margin-bottom: 30px;
+    }
+    .subtitle{
+      margin-bottom: 50px;
+    }
+  }
+  &__button{
+    width: 195px;
+    height: 55px;
+    background-color: #fff;
+    font-size: 16px;
+    color: $blue;
+    border: none;
+    border-radius: 27px;
+    cursor: pointer;
+  }
+}
+//end join
 //start footer
 .footer-info{
   background-color: #262b30;
