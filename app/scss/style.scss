@@ -522,7 +522,42 @@ margin: 30px;
 //start choose
 
 //end choose
+//start principies
+.principles{
+  &__wrapper{
+    padding: 60px;
+    display:flex;
+    justify-content: space-around;
+    font-size: 24px;
+    text-align: center;
+  }
+}
+.guarantee{
+  &-img{
+    background-image: url(../images/principies/Img1.png);
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 120px;
+    margin: 0 auto 30px;
+  }
+  span{
+      color: $blue;
+    }
+}
+.support{
+  &-img{
+    background-image: url(../images/principies/Img2.png);
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 120px;
+    margin: 0 auto 30px;
+  }
+  span{
+      color: $violet;
+    }
+}
 
+//end principies
 
 //start join
 .join{
